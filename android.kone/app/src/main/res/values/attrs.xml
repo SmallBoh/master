@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--这里为什么抽出去来？因为假如有两个textSize分别在不同的自定义view下，构建的时候会报错，抽取出来重复利用-->
+    <attr name="textSize" format="dimension|reference"/>
+    <attr name="textColor" format="color"/>
+
+
+    <declare-styleable name="ChartView">
+        <attr name="max_score" format="integer"/>
+        <attr name="min_score" format="integer"/>
+        <attr name="broken_line_color" format="color"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+        <attr name="dottedlineColor" format="color"/>
+    </declare-styleable>
+
+
+</resources>
